@@ -66,7 +66,7 @@ public class SearchPatientsBusinessControllerTest {
 		Patient patient = new Patient();
 		patient.setEmail("ali@abv.bg");
 		patient.setPersonalNumber(PERSONAL_NUMBER);
-		patient.setFirstName("Юри " + num);
+		patient.setFirstName("XXX" + num);
 		patient.setName("Иванов");
 		patient.setCreatedBy("RLddkd");
 		
@@ -81,11 +81,11 @@ public class SearchPatientsBusinessControllerTest {
 		patient.setLastHospitalization(hospitalization);
 		
 		Address address = new Address();
-		address.setCountry("България");
+		address.setCountry("XXX");
 		address.setTown("София");
 		address.setNumber("67A");
 		address.setPostcode("4518");
-		address.setStreet("Бул. Джеймс Баучър");
+		address.setStreet("xxX");
 		
 		patient.setAddress(address);
 		
