@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<title>Error Page</title>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<link rel="stylesheet" th:href="@{/css/w3.css}"/>
+<link rel="stylesheet" th:href="@{/css/roboto.css}"/>
+<link rel="stylesheet" th:href="@{/css/font-awesome.min.css}"/>
+<style>
+html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
+</style>
+<body class="w3-light-grey">
+
+<!-- Page Container -->
+<div class="w3-content w3-margin-top" style="max-width:1400px;">
+
+  <!-- The Grid -->
+  <div class="w3-row-padding">
+  
+    <!-- Left Column -->
+    <div class="w3-centered">
+    
+      <div class="w3-white w3-text-grey w3-card-4">
+        <div class="w3-display-container">
+          <img th:src="@{/images/avatar_hat.jpg}" style="width:100%" alt="Avatar"/>
+          <div class="w3-display-bottomleft w3-container w3-text-black">
+            <h1>Error Occurred!</h1>
+          </div>
+          
+          <div class="w3-display-topleft w3-container w3-text-white">
+            <a href="/" class="w3-bar-item w3-button w3-padding-large w3-theme-d4"><i class="fa fa-home w3-margin-right"></i>Home</a>
+          </div>
+          
+          <div class="w3-display-topmiddle w3-container w3-text-white">
+            <div class="w3-bar-item w3-show w3-padding-large">Logged as <span sec:authentication="name">UserName</span></div>
+          </div>      
+          
+          <div class="w3-display-topright w3-container w3-text-white">
+  			  <!-- Logout -->
+			  <div title="Logout">
+			  	<form th:action="@{/logout}" method="post">
+			  		<input type="hidden" th:name="${_csrf.parameterName}" th:value="${_csrf.token}"/>
+			  		<button class="w3-bar-item w3-button w3-hide-small w3-right w3-padding-large" type="submit"><i class="fa fa-lock w3-margin-right"></i> Logout</button>
+			  	</form>
+			  </div><!-- End Logout -->
+          </div>
+        </div>
+        <div class="w3-container">
+          <p><i class="fa fa-gear fa-fw w3-margin-right w3-large w3-text-teal"></i><span th:text="${status}">status</span></p>
+          <p><i class="fa fa-info-circle fa-fw w3-margin-right w3-large w3-text-teal"></i><span th:text="${error}">error</span></p>
+          <hr/>
+          <p th:if="${message != null}"><i class="fa fa-tasks fa-fw w3-margin-right w3-large w3-text-teal"></i><span th:text="${message}">message</span></p>
+          <p th:if="${errorMessage != null}"><i class="fa fa-flash fa-fw w3-margin-right w3-large w3-text-teal"></i><span th:text="${errorMessage}">message</span></p>
+        </div>
+      </div><br/>
+
+    <!-- End Left Column -->
+    </div>
+
+    
+  <!-- End Grid -->
+  </div>
+  
+  <!-- End Page Container -->
+</div>
+
+<footer class="w3-container w3-teal w3-center w3-margin-top">
+  <p>Powered by w3.css</p>
+</footer>
+
+</body>
+</html>

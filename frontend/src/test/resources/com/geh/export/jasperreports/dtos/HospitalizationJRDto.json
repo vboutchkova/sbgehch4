@@ -1,0 +1,63 @@
+{
+	"id": null,
+	"doctorNames": null,
+	"wardHeadNames": null,
+	"name": "Completed Test hospitalization 3333_13",
+	"startDate": 1521659805487,
+	"endDate": 1521658532893,
+	"sentDocumentNumber": "548954+6454/10.11.2015",
+	"sentMedicalCenter": "16 MC Даме Груев 24",
+	"sentDate": 1521665805111,
+	"anamnesis": "Някаква анамнеза...",
+	"status": "",
+	"diagnoses": "",
+	"treatment": "",
+	"postTreatment": "",
+	"discussion": "",
+	"comment": "",
+	"patient": {
+		"id": null,
+		"personalNumber": "1234567890",
+		"firstName": "Юри 4",
+		"middleName": "",
+		"name": "Панайотов",
+		"address": {
+			"number": "8",
+			"street": "Бул. България",
+			"town": "София",
+			"postcode": "1000",
+			"country": "България"
+		}
+	},
+	"examinations": [{
+		"doctorNames": null,
+		"date": 1521665805111,
+		"comment": "Прелед 1 ван тонятонятж вжотвя 4634 жтоавжт ятжоа нжотвожт жоа нжотжоав жоа\r\nYear: If the formatter's Calendar is the Gregorian calendar, the following rules are applied.\r\nFor formatting, if the number of pattern letters is 2, the year is truncated to 2 digits; otherwise it is interpreted as a number.\r\nFor parsing, if the number of pattern letters is more than 2, the year is interpreted literally, regardless of the number of digits. So using the pattern \"MM/dd/yyyy\", \"01/11/12\" parses to Jan 11, 12 A.D.\r\nFor parsing with the abbreviated year pattern (\"y\" or \"yy\"), SimpleDateFormat must interpret the abbreviated year relative to some century. It does this by adjusting dates to be within 80 years before and 20 years after the time the SimpleDateFormat instance is created. For example, using a pattern of \"MM/dd/yy\" and a SimpleDateFormat instance created on Jan 1, 1997, the string \"01/11/12\" would be interpreted as Jan 11, 2012 while the string \"05/04/64\" would be interpreted as May 4, 1964. During parsing, only strings consisting of exactly two digits, as defined by Character.isDigit(char), will be parsed into the default century. Any other numeric string, such as a one digit string, a three or more digit string, or a two digit string that isn't all digits (for example, \"-1\"), is interpreted literally. So \"01/02/3\" or \"01/02/003\" are parsed, using the same pattern, as Jan 2, 3 AD. Likewise, \"01/02/-3\" is parsed as Jan 2, 4 BC."
+	}, {
+		"doctorNames": null,
+		"date": 1521659805487,
+		"comment": "VAT\tVAT - Service Fee - Ref ID 167528683\t($3.20) $60.80\r\nFixed Price\tInvoice for Consultation for YYY: Milestone 1 - XXX\t$80.00 $80.00Allocates a Date object and initializes it so that it represents the time at which it was allocated, measured to the nearest millisecond.Allocates a Date object and initializes it to represent the specified number of milliseconds since the standard base time known as \"the epoch\", namely January 1, 1970, 00:00:00 GMT."
+	}],
+	"clinicalResults": [{
+		"date": 1521659805487,
+		"name": "Ехография",
+		"comment": "JasperReports est un outil open source puissant pour la génération des états avec du contenu riche, soit pour présentation à l'écran, impression papier ou stockage dans des fichiers en format PDF, HTML, XLS, CSV ou XML."
+	}, {
+		"date": 1521658532893,
+		"name": "Колоноскопия",
+		"comment": "JasperReports é uma poderosa ferramenta Open Source de criação de relatórios que tem a capacidade de gerar conteúdos complexos para o ecran, para a impressora ou em ficheiros PDF, HTML, XLS, CSV e XML."
+	}],
+	"laboratoryResults": [{
+		"date": 1521665805111,
+		"name": null,
+		"comment": "Лабораторни резултати 1л................................ Keifdkjkf fkdkdk 309l,l kdljkd fd \r\nllkdkdjflkdsjk\r\nkkdsfs....."
+	}, {
+		"date": 1521659805487,
+		"name": null,
+		"comment": "Лабораторни резултати номер 2 kdjflkdsjk\r\nkkdsfs....."
+	}, {
+		"date": 1521658532893,
+		"name": null,
+		"comment": "Лабораторни резултати номер 3 Keifdkjkf fkdkdk 309l,l kdljkd fd \r\nllkdkdjflkdsjk\r\nkkdsfs....."
+	}]
+}
