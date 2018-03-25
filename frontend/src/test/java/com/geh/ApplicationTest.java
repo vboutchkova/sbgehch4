@@ -59,8 +59,8 @@ public class ApplicationTest {
 		patient = new Patient();
 		patient.setEmail("eho@abv.bg");
 		patient.setPersonalNumber(PERSONAL_NUMBER);
-		patient.setFirstName("Chocho " + num);
-		patient.setName("Delibaltov");
+		patient.setFirstName("XXX " + num);
+		patient.setName("XXXX");
 		patient.setCreatedBy("Admin");
 		pdao.save(patient);
 
